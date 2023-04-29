@@ -157,7 +157,10 @@
 //     // n here is defined!
 //     console.log(n); // { a: [1, 2, 3] }
   
-//     for (let x of n.a) { // ReferenceError
+//     for (let n of n.a) { // ReferenceError
+//       console.log(n);
+//     }
+//     for (let x of n.a) { 
 //       console.log(n);
 //     }
 //   }
@@ -517,4 +520,15 @@
 // var x = 2
 // let x = 2 // let will through error
 
+// function a() {
+//     this.site = 'Ayush';
+  
+//     this.b = function b(){
+//       console.log(this);
+//     }
+//   }
+  
 
+//   let site = 'Wikipedia';
+//   let nobj = new a();
+// console.log(nobj)
